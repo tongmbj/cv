@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<!-- Tong Chen first html file personal website -->
+
+<head>
+  <meta charset="utf-8">
+  <title>Tong's Personal Site</title>
+</head>
+
+<body>
+  <!-- If I want to format the heading without CSS, we can use a table for image and descriptions -->
+  <table>
+    <tr>
+      <td> <img
+          src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-1/p240x240/42301826_2073512812712977_5178655773474947072_o.jpg?_nc_cat=105&_nc_sid=dbb9e7&_nc_oc=AQnpM21FQGHoK4sPuHh1zbgCmwh3VDK7Pk7wOgfyC81t1vwafIB29XCOCBDCpu1KY1fskkLXtI6w1e-do56QVVb3&_nc_ht=scontent-dfw5-1.xx&_nc_tp=6&oh=2a9e98e9220bea744198235b00ac50ab&oe=5EF77F5E"
+          alt="Tong's Profile Pictures"></td>
+      <td>
+        <h1>Tong Chen</h1>
+        <p><em>Dumbass <strong>poopoo</strong> Fuck</em> <a href="https://www.linkedin.com/in/tong-chen-105/" target="_blank">Linkedin</a></p>
+
+        <p>I am an incoming Junior at The University of Texas at Austin McCombs School of Business, studying Management Information Systems with a certificate in Elements of Computer Science </p>
+      </td>
+    </tr>
+  </table>
+
+
+  <hr size="3" noshade>
+
+  <h3>Education</h3>
+
+  <ul>
+    <li>Allen High School <em>2015-2018</em></li>
+    <li>The University of Texas at Austin <em>2018-present</em></li>
+    <ul>
+      <li>Major: Management Information Systems</li>
+      <li>Certificate: Elements of Computing</li>
+    </ul>
+  </ul>
+
+  <hr>
+  <h3>A Timeline of Tong's Life</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Summary</th>
+        <!--This would work in the table tag as a row, without <thead> because it's using special <th> table heading data tag -->
+        <!--BUT, having thead separate from tbody and tfoot, it allows special things (like isolating the header when you scroll) but this requires css/js  -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>03/03/2000</td>
+        <td>Born</td>
+      </tr>
+      <tr>
+        <td>2000-2002</td>
+        <td>Pooped, pissed, shidded, and cried</td>
+      </tr>
+      <tr>
+        <td>2002-2020</td>
+        <td>I fuckin lived bitch</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!--SPECIAL NOTE: in MDN developer wiki for the table element, it says there are attributes like border, color, etc.-->
+  <!--However, there are thumbs down next to them. This means they are "deprecated" meaning that they are no longer suggested to be used-->
+  <!--for one reason or another (anitquated, better ways, etc.) In this case, CSS is for formatting/styling and Javascript is for behavior.  -->
+  <!--Thus, these functions should be saved for the more specialized languages.  -->
+
+  <hr>
+
+  <a href="hobbies.html">
+    <h3>My Hobbies</h3>
+  </a>
+
+  <a href="contacts.html" target="_blank">
+    <h3>How to contact me</h3>
+  </a>
+
+  <hr>
+
+  <h2><u>My Skills!!</u></h2>
+
+  <table>
+    <tr valign="top"> <!-- NOTE: This valign attribute is also obsolete due to formatting with CSS probably, but im just doing it bc it looks better at the moment to have everything top aligned. -->
+      <td>
+        <table cellspacing="10">
+          <thead>
+            <th>Skill</th>
+            <th>Proficiency</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Python</td>
+              <td>★★★☆☆</td>
+            </tr>
+            <tr>
+              <td>SQL</td>
+              <td>★★★☆☆</td>
+            </tr>
+            <tr>
+              <td>Excel</td>
+              <td>★★★☆☆</td>
+            </tr>
+            <tr>
+              <td>PowerPoint</td>
+              <td>★★★★☆</td>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td>★★☆☆☆</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+      <td>
+        <table cellspacing="10">
+          <thead>
+            <th>Hobby</th>
+            <th>Proficiency</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Music Production</td>
+              <td>★☆☆☆☆</td>
+            </tr>
+            <tr>
+              <td>Video Games</td>
+              <td>★★★★☆</td>
+            </tr>
+            <tr>
+              <td>Board Games</td>
+              <td>★★★☆☆</td>
+            </tr>
+            <tr>
+              <td>Anime/Manga</td>
+              <td>★★★☆☆</td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+
+
+  <img src="doggo.jpg" alt="Picture of cute dog with a toilet paper tube">
+
+</body>
+
+</html>
