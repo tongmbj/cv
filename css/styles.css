@@ -1,0 +1,22 @@
+body {
+  background-color: #cae8d5;
+}
+/* CSS MDN docs has a keyword index, which is a huge list of the properties ("What", "rule") that you can change w/ CSS rules. */
+
+/* COMMENT: it's best practice in CSS to have the element rules be in alphabetical order bc the more you code, diff selectors might have huge
+lines of rules for styling and formatting. Thus, in alphabetical order is easier to debug. */
+hr {
+  border-color: #84a9ac;
+  border-style:none;
+  border-top-style: dotted;
+  border-width: 6px;
+  width: 5%;
+}
+
+h1 {
+  color: #3b6978;
+}
+
+h3 {
+  color: #3b6978;
+}

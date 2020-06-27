@@ -6,15 +6,48 @@
 <head>
   <meta charset="utf-8">
   <title>Tong's Personal Site</title>
+
+  <!-- LINK links to external style sheet. -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- The autofill for link includes a / forwardslash in the href, trying to refer to a ROOT. We get rid of it for now to say that the folder is in the same folder as html. -->
+  <!-- Removing the forwardslash says that the css folder is on the same level as the index.html -->
+
+  <!-- Internal CSS -->
+
+  <!--
+  <style>
+
+    body {
+      background-color: #cae8d5;
+    }
+
+    hr {
+      border-color: #3b6978;
+      border-style:none;
+      border-top-style: dotted;
+      border-width: 6px;
+      height: 0px;
+      width: 5%;
+    }
+
+  </style>
+  -->
+
+  <!-- This ^^ is an example of internal CSS, but it would not affect other html pages such as hobbies or contacts. -->
+  <!-- External CSS can effect all pages. We do this by creating a new folder called CSS, and a file called styles.css-->
+
 </head>
 
 <body>
+
   <!-- If I want to format the heading without CSS, we can use a table for image and descriptions -->
+  <!-- However, most websites these days dont do this with tables, like if you load a website with bad connection it shows all the -->
+  <!-- HTML elements like images, links, text et. in rows, with no tables right? prolly bc the CSS and JS wasnt loaded.-->
   <table>
     <tr>
       <td> <img
-          src="https://scontent-dfw5-1.xx.fbcdn.net/v/t1.0-1/p240x240/42301826_2073512812712977_5178655773474947072_o.jpg?_nc_cat=105&_nc_sid=dbb9e7&_nc_oc=AQnpM21FQGHoK4sPuHh1zbgCmwh3VDK7Pk7wOgfyC81t1vwafIB29XCOCBDCpu1KY1fskkLXtI6w1e-do56QVVb3&_nc_ht=scontent-dfw5-1.xx&_nc_tp=6&oh=2a9e98e9220bea744198235b00ac50ab&oe=5EF77F5E"
-          alt="Tong's Profile Pictures"></td>
+          src="Images\headshot.jpg"
+          alt="Tong's Profile Picture"></td>
       <td>
         <h1>Tong Chen</h1>
         <p><em>Dumbass <strong>poopoo</strong> Fuck</em> <a href="https://www.linkedin.com/in/tong-chen-105/" target="_blank">Linkedin</a></p>
@@ -25,7 +58,7 @@
   </table>
 
 
-  <hr size="3" noshade>
+  <hr style="height: 3px"> <!-- Because i specified inline CSS here for the HR to have height 3px, it will display 3px instead of 2px. -->
 
   <h3>Education</h3>
 
@@ -83,7 +116,7 @@
 
   <hr>
 
-  <h2><u>My Skills!!</u></h2>
+  <h1><u>My Skills!!</u></h1>
 
   <table>
     <tr valign="top"> <!-- NOTE: This valign attribute is also obsolete due to formatting with CSS probably, but im just doing it bc it looks better at the moment to have everything top aligned. -->
@@ -152,4 +185,6 @@
 
 </body>
 
+  <!--NOTE: for debugging, using chrome settings -> more tools -> developer tools you can look in the CONSOLE tab and see errors. -->
+  <!-- (or inspect element lol and go to console.) -->
 </html>
